@@ -244,6 +244,127 @@ h1, h2, h3 {
     }
 }
 
+/* --- Inscription Section --- */
+.inscription-section {
+    padding: 80px 20px;
+    background-color: var(--color-gris-topo);
+    text-align: center;
+    border-top: 3px solid var(--color-marron-claro);
+    border-bottom: 3px solid var(--color-marron-claro);
+}
+
+.inscription-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.inscription-section h2 {
+    font-size: 2.5rem;
+    color: var(--color-marron-claro);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.inscription-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.inscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-marron-claro);
+    letter-spacing: 1px;
+}
+
+.form-group input {
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 2px solid var(--color-gris-oscuro);
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.form-group input::placeholder {
+    color: #777;
+}
+
+.form-group input:focus {
+    border-color: var(--color-marron-claro);
+    box-shadow: 0 0 0 3px rgba(194, 149, 110, 0.2);
+}
+
+.btn-enviar {
+    margin-top: 10px;
+    padding: 16px 40px;
+    background-color: var(--color-marron-claro);
+    color: var(--color-gris-oscuro);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(194, 149, 110, 0.3);
+}
+
+.btn-enviar:hover {
+    background-color: #d4a87c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(194, 149, 110, 0.4);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+.form-status {
+    margin-top: 10px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: none;
+}
+
+.form-status.success {
+    display: block;
+    background-color: rgba(80, 200, 120, 0.15);
+    border: 2px solid #50c878;
+    color: #50c878;
+}
+
+.form-status.error {
+    display: block;
+    background-color: rgba(220, 80, 80, 0.15);
+    border: 2px solid #dc5050;
+    color: #ff8080;
+}
+
 /* --- Footer --- */
 .site-footer {
     

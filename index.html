@@ -48,6 +48,34 @@
         </div>
     </header>
 
+    <!-- Sección de Inscripción -->
+    <section class="inscription-section" id="inscripcion">
+        <div class="inscription-container">
+            <h2>¿Querés participar?</h2>
+            <p class="inscription-subtitle">¡Dejanos tus datos acá!</p>
+            <form class="inscription-form" id="inscripcionForm" onsubmit="enviarFormulario(event)">
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre y apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresá tu número de teléfono" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Dirección de Correo</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresá tu correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" placeholder="Ingresá tu edad" min="1" max="120" required>
+                </div>
+                <button type="submit" class="btn-enviar" id="btnEnviar">Enviar mis datos</button>
+                <div id="form-status" class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
     <!-- Category: Freestyle -->
     <section class="participants-section" id="freestyle">
         <h2>CATEGORÍA: FREESTYLE</h2>
@@ -59,10 +87,6 @@
                     <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Barbero Freestyle 1">
                     <div class="overlay"></div>
                 </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Especialista en diseños creativos y freestyle urbano.</p>
-                </div>
             </article>
 
             <!-- Card 2 -->
@@ -70,10 +94,6 @@
                 <div class="card-image">
                     <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Barbero Freestyle 2">
                     <div class="overlay"></div>
-                </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Reconocido por sus figuras geométricas y realismo.</p>
                 </div>
             </article>
 
@@ -83,10 +103,6 @@
                     <img src="https://picsum.photos/seed/freestyle3/800/800" alt="Barbero Freestyle 3">
                     <div class="overlay"></div>
                 </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Innovador en técnicas de sombreado y freestyle a navaja.</p>
-                </div>
             </article>
 
             <!-- Card 4 -->
@@ -95,10 +111,6 @@
                     <img src="https://images.unsplash.com/photo-1520338661084-680395057c93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Barbero Freestyle 4">
                     <div class="overlay"></div>
                 </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Destacado por su fluidez y trazos perfectos con navaja libre.</p>
-                </div>
             </article>
 
             <!-- Card 5 -->
@@ -106,20 +118,12 @@
                 <div class="card-image">
                     <img src="https://picsum.photos/seed/freestyle5/800/800" alt="Barbero Freestyle 5">
                 </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Originalidad al máximo.</p>
-                </div>
             </article>
 
             <!-- Card 6 -->
             <article class="barber-card">
                 <div class="card-image">
                     <img src="https://picsum.photos/seed/freestyle6/800/800" alt="Barbero Freestyle 6">
-                </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Arte y precisión combinados.</p>
                 </div>
             </article>
 
@@ -137,10 +141,6 @@
                     <img src="https://picsum.photos/seed/fastfade1/800/800" alt="Barbero Fast Fade 1">
                     <div class="overlay"></div>
                 </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Experto en transiciones rápidas y degradados precisos.</p>
-                </div>
             </article>
 
             <!-- Card 2 -->
@@ -148,10 +148,6 @@
                 <div class="card-image">
                     <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Barbero Fast Fade 2">
                     <div class="overlay"></div>
-                </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Velocidad y limpieza son las marcas de su estilo fade.</p>
                 </div>
             </article>
 
@@ -161,10 +157,6 @@
                     <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Barbero Fast Fade 3">
                     <div class="overlay"></div>
                 </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Maestro en controlar los tiempos sin perder la técnica del degradado.</p>
-                </div>
             </article>
 
             <!-- Card 4 -->
@@ -173,10 +165,6 @@
                     <img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Barbero Fast Fade 4">
                     <div class="overlay"></div>
                 </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Especialista en pulido final en tiempo récord.</p>
-                </div>
             </article>
 
             <!-- Card 5 -->
@@ -184,20 +172,12 @@
                 <div class="card-image">
                     <img src="https://picsum.photos/seed/fastfade5/800/800" alt="Barbero Fast Fade 5">
                 </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Corte rápido, limpio y sin errores.</p>
-                </div>
             </article>
 
             <!-- Card 6 -->
             <article class="barber-card">
                 <div class="card-image">
                     <img src="https://picsum.photos/seed/fastfade6/800/800" alt="Barbero Fast Fade 6">
-                </div>
-                <div class="card-content">
-                    <h3>Nombre del Barbero</h3>
-                    <p>Breve descripción del estilo y la trayectoria de este barbero. Especialista en la máquina y tijera rápida.</p>
                 </div>
             </article>
 
